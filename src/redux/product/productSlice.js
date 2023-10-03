@@ -199,6 +199,7 @@ const productSlice = createSlice({
         state.isLoading = false;
         state.isSuccess = true;
         state.isError = false;
+        // this action.payload from api function not from a dispatch!!
         console.log(action.payload);
         state.products.push(action.payload);
         toast.success("product addded successfully!!");
