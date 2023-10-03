@@ -25,6 +25,7 @@ const initialState = {
 // create new product
 
 export const createProduct = createAsyncThunk(
+  // 'products/create' is used for identify different actions in Redux.{actually 'products/create' is a kind of action name!!!}
   "products/create",
   async (formData, thunkAPI) => {
     try {
